@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NewOne</string>
+    <string name="web_client_id">1002683752106-98dpqhmjscljk5ehl31ns2frgcrc9uip.apps.googleusercontent.com</string>
+    <string name="loading">Loading</string>
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
