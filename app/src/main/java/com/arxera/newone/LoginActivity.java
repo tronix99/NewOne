@@ -118,7 +118,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                             }
 
                             Users user = new Users(
-                                    account.getDisplayName() + " " + account.getFamilyName(),
+                                    account.getDisplayName(),
                                     account.getEmail(),
                                     photoUrl,
                                     FirebaseAuth.getInstance().getCurrentUser().getUid()
