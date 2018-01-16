@@ -19,6 +19,8 @@ buildscript {
 allprojects {
     repositories {
         maven { url 'https://maven.fabric.io/public' }
+        maven{ url "http://dl.bintray.com/glomadrian/maven" }
+
         google()
         jcenter()
     }
