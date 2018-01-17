@@ -171,7 +171,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
     }
 
     private void displayLocation() {
@@ -208,7 +207,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    private void rotateMarker(final Marker mCurrent, int i, GoogleMap mMap) {
+    private void rotateMarker(final Marker mCurrent, final int i, GoogleMap mMap) {
         final Handler handler = new Handler();
         final long start = SystemClock.uptimeMillis();
         final float startRotation = mCurrent.getRotation();
@@ -235,9 +234,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
     }
-
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
