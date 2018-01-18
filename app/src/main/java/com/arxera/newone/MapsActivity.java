@@ -192,7 +192,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         if (mCurrent != null)
                             mCurrent.remove(); //remove already marker
                         mCurrent = mMap.addMarker(new MarkerOptions()
-                                .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_bike))
+                                .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_small_bike))
                                 .position(new LatLng(latitude, longitude))
                                 .title("MyShop"));
                         //Move Camera to this Postion
